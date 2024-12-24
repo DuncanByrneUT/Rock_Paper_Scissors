@@ -28,16 +28,20 @@ while True:
         user_score_wins += 1
         continue
 
-    if user_input == "paper" and comp_pick == "rock":
+    elif user_input == "paper" and comp_pick == "rock":
         print("You win!")
         user_score_wins += 1
-        continue
 
-    if user_input == "scissors" and comp_pick == "paper":
+
+    elif user_input == "scissors" and comp_pick == "paper":
         print("You win!")
         user_score_wins += 1
-        continue
 
+    else:
+        print("You lost! :(")
+        comp_wins += 1
+print("You won", user_score_wins, "times")
+print("The computer won", comp_wins, "times")
 
 print("Goodbye!")
 
